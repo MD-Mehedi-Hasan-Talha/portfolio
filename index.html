@@ -1142,7 +1142,7 @@
 
     <!-- Portfolio Section -->
     <section
-      class="portfolio-section p-[40px] md:p-[80px_100px] relative"
+      class="portfolio-section container mx-auto p-[40px] md:p-[80px_100px] relative"
       id="lab"
     >
       <div
@@ -1167,72 +1167,88 @@
       ></div>
 
       <!-- Project 1 (Left) -->
+<div
+  class="project-item left relative mb-[150px] flex flex-col xl:flex-row gap-[60px] opacity-0 translate-y-[30px] transition-all duration-800 ease-out"
+>
+  <div class="project-info flex-1 flex flex-col justify-center z-10">
+    <div
+      class="featured-label font-semibold text-[16px] text-[#9857d3] tracking-[0.02em] mb-[10px]"
+    >
+      Featured Project
+    </div>
+    <div
+      class="project-title font-semibold text-[34px] leading-[51px] text-[#ccd6f6] tracking-[0.02em] mb-[30px]"
+    >
+      Example Project
+    </div>
+    <div
+      class="project-card relative rounded-[14px] p-[26px] mb-[30px] backdrop-blur-[20px] border border-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]"
+      style="
+        background: radial-gradient(
+          90.16% 143.01% at 15.32% 21.04%,
+          rgba(105, 59, 147, 0.2) 0%,
+          rgba(110, 191, 244, 0.0447917) 77.08%,
+          rgba(70, 144, 213, 0) 100%
+        );
+      "
+    >
+      <!-- Glossy overlay effect -->
       <div
-        class="project-item left relative mb-[150px] flex flex-col xl:flex-row gap-[60px] opacity-0 translate-y-[30px] transition-all duration-800 ease-out"
+        class="absolute inset-0 rounded-[14px] pointer-events-none"
+        style="
+          background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0.05) 50%,
+            rgba(255, 255, 255, 0) 100%
+          );
+        "
+      ></div>
+      
+      <div
+        class="project-description relative font-medium text-[18px] leading-[27px] text-[#ccd6f6]"
       >
-        <div class="project-info flex-1 flex flex-col justify-center">
-          <div
-            class="featured-label font-semibold text-[16px] text-[#9857d3] tracking-[0.02em] mb-[10px]"
-          >
-            Featured Project
-          </div>
-          <div
-            class="project-title font-semibold text-[34px] leading-[51px] text-[#ccd6f6] tracking-[0.02em] mb-[30px]"
-          >
-            Example Project
-          </div>
-          <div
-            class="project-card rounded-[14px] p-[26px] mb-[30px] backdrop-blur-[40px]"
-            style="
-              background: radial-gradient(
-                90.16% 143.01% at 15.32% 21.04%,
-                rgba(105, 59, 147, 0.2) 0%,
-                rgba(110, 191, 244, 0.0447917) 77.08%,
-                rgba(70, 144, 213, 0) 100%
-              );
-            "
-          >
-            <div
-              class="project-description font-medium text-[18px] leading-[27px] text-[#ccd6f6]"
-            >
-              A web app for visualizing personalized Spotify data. View your top
-              artists, top tracks, recently played tracks, and detailed audio
-              information about each track. Create and save new playlists of
-              recommended tracks based on your existing playlists and more.
-            </div>
-          </div>
-          <div class="project-links flex gap-[15px]">
-            <div
-              class="project-link w-[31px] h-[31px] bg-white rounded-full flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110"
-            >
-              🔗
-            </div>
-            <div
-              class="project-link w-[31px] h-[31px] bg-white rounded-full flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110"
-            >
-              📁
-            </div>
-          </div>
-        </div>
-
-        <div class="project-image-container flex-1 relative">
-          <div
-            class="project-image-stack relative w-full h-[341px] max-w-[583px]"
-          >
-            <div
-              class="project-image-back absolute w-[643px] h-[380px] bg-[#2b0b3a] rounded-[10px] -top-[29px] -left-[30px]"
-            ></div>
-            <div
-              class="project-image-mid absolute w-[583px] h-[341px] bg-[#2b215a] rounded-[10px] top-0 left-0"
-            ></div>
-            <div
-              class="project-image-front absolute w-[568px] h-[354px] rounded-[15px] top-[30px] left-[44px] flex items-center justify-center text-[24px] font-semibold text-[rgba(255,255,255,0.3)] bg-gradient-to-br from-[#4f228d] to-[#2c1250]"
-            >
-              Project Preview
-            </div>
-          </div>
-        </div>
+        A web app for visualizing personalized Spotify data. View your top
+        artists, top tracks, recently played tracks, and detailed audio
+        information about each track. Create and save new playlists of
+        recommended tracks based on your existing playlists and more.
       </div>
+    </div>
+    <div class="project-links flex gap-[15px]">
+      <div
+        class="project-link w-[31px] h-[31px] bg-white rounded-full flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110"
+      >
+        🔗
+      </div>
+      <div
+        class="project-link w-[31px] h-[31px] bg-white rounded-full flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110"
+      >
+        📁
+      </div>
+    </div>
+  </div>
+
+  <div class="project-image-container flex-1 relative">
+    <div
+      class="project-image-stack relative w-full h-[341px] max-w-[583px] ml-auto"
+    >
+      <div
+        class="project-image-back absolute w-[643px] h-[380px] rounded-[10px] -top-[29px] -left-[30px]"
+        style="background: linear-gradient(135deg, #3d1454 0%, #2b0b3a 100%);"
+      ></div>
+      <div
+        class="project-image-mid absolute w-[583px] h-[341px] rounded-[10px] top-0 left-0"
+        style="background: linear-gradient(135deg, #3a2563 0%, #2b215a 100%);"
+      ></div>
+      <div
+        class="project-image-front absolute w-[568px] h-[354px] rounded-[15px] top-[30px] left-[44px] flex items-center justify-center text-[24px] font-semibold text-[rgba(255,255,255,0.3)]"
+        style="background: linear-gradient(135deg, #5a2b9d 0%, #4f228d 50%, #2c1250 100%);"
+      >
+        Project Preview
+      </div>
+    </div>
+  </div>
+</div>
 
       <!-- Project 2 (Right) -->
       <div
